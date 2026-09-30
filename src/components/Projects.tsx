@@ -1,0 +1,12 @@
+import { ArrowUpRight, BriefcaseBusiness, Globe2, Plane } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
+
+const projects = [
+  { number: "01", title: "Travel booking platform", category: "TRAVEL · BOOKING", description: "A portfolio slot for a travel booking project. Add a verified project summary and working link here.", icon: Plane, tone: "project-blue" },
+  { number: "02", title: "B2B booking application", category: "BUSINESS · BOOKING", description: "A portfolio slot for a B2B booking project. Add confirmed functionality and project details here.", icon: BriefcaseBusiness, tone: "project-cyan" },
+  { number: "03", title: "B2C travel portal", category: "TRAVEL · CUSTOMER WEB", description: "A portfolio slot for a B2C travel portal. Add the scope and public project URL when available.", icon: Globe2, tone: "project-slate" },
+];
+
+export default function Projects() {
+  return <section className="section projects-section" id="projects" aria-labelledby="projects-title"><div className="page-shell"><div className="projects-heading-row"><SectionHeading eyebrow="SELECTED WORK" title="Projects & focus areas" titleId="projects-title" description="A glimpse at the kinds of products and workflows I work around." /><span className="project-note"><span /> PROJECT LINKS TO BE ADDED</span></div><div className="projects-grid">{projects.map(({ number, title, category, description, icon: Icon, tone }) => <article className="project-card" key={title}><div className={`project-visual ${tone}`}><div className="project-visual-grid" /><span className="project-number">{number}</span><div className="project-emblem"><Icon size={30} strokeWidth={1.4} /></div><span className="project-visual-caption">CASE STUDY<br />IN PROGRESS</span><span className="project-visual-coordinates">AS / {number}</span></div><div className="project-info"><p className="project-category">{category}</p><h3>{title}</h3><p className="project-description">{description}</p><a className="project-link" href="#contact">Ask about this work <ArrowUpRight size={15} /></a></div></article>)}</div><p className="projects-footnote">Project descriptions and external links will be added once details are confirmed.</p></div></section>;
+}
