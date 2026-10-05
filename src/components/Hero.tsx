@@ -12,7 +12,6 @@ export default function Hero() {
           <p className="hero-role">.NET Developer <span>/</span> React Developer</p>
           <p className="hero-description">Software Developer with 3 years of experience building, maintaining, debugging, and enhancing web applications. I focus on solving real-world problems, understanding application flows, and delivering reliable software solutions.</p>
           <div className="hero-actions"><a className="button button-primary" href="#projects">View My Work <ArrowUpRight size={17} aria-hidden="true" /></a><a className="button button-quiet" href="#contact">Contact Me</a></div>
-          <div className="hero-meta"><span className="hero-meta-line" /><p>Building scalable solutions.<br /><strong>Delivering impact.</strong></p></div>
         </div>
         <div className="hero-art" aria-label="Illustrated software development workspace">
           <div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" /><div className="art-crosshair crosshair-one" /><div className="art-crosshair crosshair-two" />
@@ -28,7 +27,6 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-bottom page-shell"><p className="hero-quote"><span>“</span>Code is not just what I write, it&apos;s how I solve problems.</p><a className="scroll-cue" href="#about"><ArrowDown size={15} /> SCROLL TO EXPLORE</a></div>
-      <div className="hero-index" aria-hidden="true">01 — 07</div>
     </section>
   );
 }
