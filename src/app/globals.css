@@ -54,11 +54,12 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent-bright);
 .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(91, 174, 255, .55); border-radius: 9px 3px; background: rgba(55, 142, 238, .15); color: #9bcfff; font-family: var(--font-geist-mono), monospace; font-size: 12px; font-weight: 700; }
 .brand-name, .footer-brand { color: #f4f7fc; font-size: 13px; font-weight: 700; }
 .brand-name b, .footer-brand span { color: var(--accent-bright); }
-.desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.7vw, 37px); }
+.desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.7vw, 37px); margin-inline: auto; }
 .nav-link { position: relative; padding-block: 27px; color: #9aaabe; font-size: 12px; transition: color 180ms ease; }
 .nav-link::after { position: absolute; right: 50%; bottom: 17px; left: 50%; height: 1px; background: var(--accent); content: ""; transition: right 180ms ease, left 180ms ease; }
 .nav-link:hover, .nav-link.is-current { color: #eff7ff; }
 .nav-link:hover::after, .nav-link.is-current::after { right: 0; left: 0; }
+.nav-actions { display: flex; align-items: center; gap: 12px; margin-left: 18px; }
 .nav-contact { display: inline-flex; min-height: 38px; align-items: center; gap: 13px; padding: 0 14px; border: 1px solid rgba(94, 171, 255, .33); border-radius: 4px; color: #c7e2ff; font-size: 11px; transition: border-color 180ms ease, background 180ms ease; }
 .nav-contact:hover { border-color: var(--accent); background: rgba(60, 155, 255, .1); }
 .nav-contact span { color: var(--accent-bright); font-size: 15px; }
@@ -333,7 +334,7 @@ html.motion-ready .reveal { transition: opacity 520ms ease, transform 520ms cubi
   .page-shell { width: min(calc(100% - 42px), 560px); }
   html { scroll-padding-top: 68px; }
   .nav-shell { height: 66px; }
-  .desktop-nav, .nav-contact { display: none; }
+  .desktop-nav, .nav-actions { display: none; }
   .menu-toggle { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid rgba(165, 198, 231, .19); border-radius: 4px; background: rgba(16, 37, 60, .68); color: #d5e8fa; cursor: pointer; }
   .mobile-nav { position: absolute; top: 65px; right: 0; left: 0; display: flex; max-height: calc(100vh - 65px); flex-direction: column; overflow: auto; padding: 13px 21px 20px; border-bottom: 1px solid rgba(155, 194, 231, .15); background: rgba(6, 16, 29, .98); box-shadow: 0 19px 32px rgba(0, 0, 0, .27); opacity: 0; pointer-events: none; transform: translateY(-8px); transition: opacity 190ms ease, transform 190ms ease; }
   .mobile-nav.is-open { opacity: 1; pointer-events: auto; transform: translateY(0); }
