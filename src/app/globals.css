@@ -220,6 +220,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent-bright);
 .experience-kicker, .project-category { margin: 0 0 8px; color: #80b8ec; font-family: var(--font-geist-mono), monospace; font-size: 9px; }
 .experience-card h3 { margin: 0; color: #e8f0f8; font-size: 22px; font-weight: 500; }
 .experience-card h3 span { color: #9aacc0; font-weight: 400; }
+.experience-role { margin: 8px 0 0; color: #cfe6fb; font-size: 14px; font-weight: 500; line-height: 1.6; }
 .experience-current { display: inline-flex; min-height: 28px; align-items: center; gap: 8px; margin-top: 10px; padding: 0 10px; border: 1px solid rgba(191, 215, 239, .12); border-radius: 3px; color: #93a7bc; font-family: var(--font-geist-mono), monospace; font-size: 8px; white-space: nowrap; }
 .experience-current span { width: 6px; height: 6px; }
 .experience-summary { max-width: 765px; margin: 18px 0 0; color: #92a5b9; font-size: 13px; line-height: 1.8; }
@@ -341,6 +342,8 @@ html.motion-ready .reveal { transition: opacity 520ms ease, transform 520ms cubi
   .mobile-nav > a span { color: #6c99c1; font-family: var(--font-geist-mono), monospace; font-size: 9px; }
   .mobile-nav > a.is-current { color: #8fc6fa; }
   .mobile-nav > a.is-current span { color: #b6dcff; }
+  .mobile-nav-cv { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; padding: 12px 14px; border: 1px solid rgba(94, 171, 255, .33); border-radius: 4px; background: rgba(16, 37, 60, .68); color: #d5e8fa; font-size: 13px; }
+  .mobile-nav-cv span { color: var(--accent-bright); font-size: 16px; }
   .mobile-nav-note { margin: 16px 0 0; color: #74889d; font-family: var(--font-geist-mono), monospace; font-size: 8px; }
   .mobile-nav-note span { padding-inline: 5px; color: var(--accent); }
   .hero-section { min-height: 0; }
